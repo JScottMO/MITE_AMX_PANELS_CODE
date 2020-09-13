@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace [
+
+<!-- Common Elements -->
+<!ELEMENT Identifier (#PCDATA)>
+<!ELEMENT Comments (#PCDATA)>
+<!ELEMENT MasterDirectory (#PCDATA)>
+<!ELEMENT CreationDate (#PCDATA)>
+
+<!-- Workspace Elements-->
+<!ELEMENT Workspace ( Identifier,
+               CreateVersion,
+               PJS_File?,
+               PJS_ConvertDate?,
+               PJS_CreateDate?,
+               Comments?,
+               Project*)>
+
+<!ATTLIST Workspace 
+      CurrentVersion CDATA   #REQUIRED> 
+
+<!ELEMENT CreateVersion     (#PCDATA)>
+
+
+<!-- Conversion data only: only included for files converted from the old .pjs database -->
+<!ELEMENT PJS_File (#PCDATA)>
+<!ELEMENT PJS_ConvertDate (#PCDATA)>
+<!ELEMENT PJS_CreateDate (#PCDATA)>
+
+<!ELEMENT Project ( Identifier,
+               Designer?,
+               DealerID?,
+               SalesOrder?,
+               PurchaseOrder?,
+               Comments?,
+               System*)>
+
+<!ELEMENT Designer (#PCDATA)>
+<!ELEMENT DealerID (#PCDATA)>
+<!ELEMENT SalesOrder (#PCDATA)>
+<!ELEMENT PurchaseOrder (#PCDATA)>
+
+
+<!ELEMENT System  (  Identifier,
+                 SysID,
+                 TransTCPIP?,
+                 TransSerial?,
+                 TransTCPIPEx?,
+                 TransSerialEx?,
+                 TransUSBEx?,
+                 TransVNMEx?,
+                 VirtualNetLinxMasterFlag?,
+                 VNMSystemID?,
+                 VNMIPAddress?,
+                 VNMMaskAddress?,
+                 UserName?,
+                 Password?,
+                 Comments?,
+                 File*)>
+
+<!ATTLIST System
+      IsActive   (true | false)   "false"
+      Platform   (Axcess | Netlinx)   "Axcess"
+      Transport   (Serial | Modem | TCPIP) "Serial"
+      TransportEx   (Serial | USB | TCPIP | VNM) "Serial">
+
+<!ELEMENT SysID (#PCDATA)>
+<!ELEMENT TransSerial (#PCDATA)>
+<!ELEMENT TransTCPIP (#PCDATA)>
+<!ELEMENT TransTCPIPEx (#PCDATA)>
+<!ELEMENT TransSerialEx (#PCDATA)>
+<!ELEMENT TransUSBEx (#PCDATA)>
+<!ELEMENT TransVNMEx (#PCDATA)>
+<!ELEMENT VNMSystemID (#PCDATA)>
+<!ELEMENT VNMIPAddress (#PCDATA)>
+<!ELEMENT VNMMaskAddress (#PCDATA)>
+<!ELEMENT VirtualNetLinxMasterFlag (#PCDATA)>
+<!ELEMENT UserName (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+
+
+<!ELEMENT File ( Identifier,
+               FilePathName,
+               Comments?,
+               MasterDirectory?,
+               DeviceMap*,
+               IRDB*)>
+
+<!ATTLIST File 
+       Type (Source | MasterSrc | Include | Module | AXB | IR | TPD | TP4 | TP5 | KPD | TKO | AMX_IR_DB | IRN_DB | Other | DUET | TOK | TKN | KPB | XDD ) "Other"
+       CompileType (Axcess | Netlinx | None) "None"> 
+
+<!ELEMENT FilePathName	(#PCDATA)>
+                            
+<!ELEMENT DeviceMap (DevName)>
+       <!ATTLIST DeviceMap DevAddr CDATA #REQUIRED>
+
+       <!ELEMENT DevName (#PCDATA)>
+
+<!ELEMENT IRDB    (Property,
+                 DOSName,
+                 UserDBPathName,
+                 Notes)>
+       <!ATTLIST IRDB DBKey CDATA #REQUIRED>
+
+       <!ELEMENT Property (#PCDATA)>
+       <!ELEMENT DOSName (#PCDATA)>
+       <!ELEMENT UserDBPathName (#PCDATA)>
+       <!ELEMENT Notes (#PCDATA)>
+]>
+
+<Workspace CurrentVersion="4.0"><Identifier>MITE18</Identifier>
+<CreateVersion>3.1</CreateVersion>
+<PJS_File></PJS_File>
+<PJS_ConvertDate></PJS_ConvertDate>
+<PJS_CreateDate></PJS_CreateDate>
+<Comments></Comments>
+<Project><Identifier>MITE Modero Panels</Identifier>
+<Designer>J Scott Christianson</Designer>
+<DealerID>Kaleidoscope</DealerID>
+<SalesOrder></SalesOrder>
+<PurchaseOrder></PurchaseOrder>
+<Comments></Comments>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>New Franklin</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>207.160.218.239:1319:1:newfranklin:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>207.160.218.239|1319|1|newfranklin|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Pilot Grove</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>216.74.212.27:1319:1:PG::</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>216.74.212.27|1319|1|PG||</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None||</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Slater</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>204.185.234.3:1319:1:slater:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>204.185.234.3|1319|1|slater|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Bunceton</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>216.74.212.199:1319:1:Bunceton:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>216.74.212.199|1319|1|Bunceton|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="true" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Glasgow</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>150.199.99.218:1319:1:glasgow:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>209.131.233.43|1319|1|glasgow|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Blair Oaks Room 1</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>204.185.34.111:1319:1:blairoaks:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>204.185.34.111|1319|1|blairoaks|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>SacredHeart</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>68.188.37.85:1319:0:SacredHeart:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>68.188.37.85|1319|0|SacredHeart|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>PrairieHome</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>198.209.194.120:1319:1:PrairieHome:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>198.209.194.120|1319|1|PrairieHome|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Eugene</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>150.199.24.11:1319:1:eugene:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>150.199.24.11|1319|1|eugene|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>NewBloomfield</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>198.209.2.21:1319:1:New Bloomfield:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>198.209.2.21|1319|1|New Bloomfield|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Russellville</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>204.185.53.12:1319:1:Russellville</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>204.185.53.12|1319|1|Russellville||</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None||</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>StElizabeth</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>207.160.141.69:1319:1:StElizabeth:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>184.81.47.221|1319|1|StElizabeth|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Tuscumbia</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>209.106.55.203:1319:1:Tuscumbia:administrator:m1t3e36</TransTCPIP>
+<TransSerial>COM3,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>209.106.55.203|1319|1|Tuscumbia|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM3|38400|8|None|1|None|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="None" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10001:1:0]"><DevName>Custom [10001:1:0]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TKN"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.TKN</FilePathName>
+<Comments>Compiled File</Comments>
+</File>
+</System>
+<System IsActive="false" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>Crocker</Identifier>
+<SysID>0</SysID>
+<TransTCPIP>208.82.148.57:1319:1:NI700 in DataCenter::</TransTCPIP>
+<TransSerial>COM6,38400,8,None,1,None,,</TransSerial>
+<TransTCPIPEx>40.138.73.187|1319|1|crocker|YWRtaW5pc3RyYXRvcg|bTF0M2UzNg</TransTCPIPEx>
+<TransSerialEx>COM6|38400|8|None|1|None||</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="Netlinx" Type="TP4"><Identifier>firstdraft - NXD-1700VG</Identifier>
+<FilePathName>firstdraft - NXD-1700VG.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="basePanel"><DevName>basePanel</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>NI3100Codev2</Identifier>
+<FilePathName>NI3100Codev2.axs</FilePathName>
+<Comments></Comments>
+</File>
+</System>
+</Project>
+</Workspace>

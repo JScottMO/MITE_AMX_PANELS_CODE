@@ -1210,7 +1210,7 @@ MITESettings[10].DefaultSpeed='768'
 MITESettings[10].CODEC_IP='192.245.42.126'
 
 MITESettings[11].SiteIPAddress= '14.14.14.14'
-MITESettings[11].SiteIndex= 10
+MITESettings[11].SiteIndex= 11
 MITESettings[11].SiteName= 'CMU Cupples 325'
 MITESettings[11].KnoxRouterType=2
 MITESettings[11].Cluster=1
@@ -1218,7 +1218,7 @@ MITESettings[11].DefaultSpeed='768'
 MITESettings[11].CODEC_IP='192.245.42.127'
 
 MITESettings[12].SiteIPAddress= '40.138.73.187'
-MITESettings[12].SiteIndex= 11
+MITESettings[12].SiteIndex= 12
 MITESettings[12].SiteName= 'Crocker Room 1'
 MITESettings[12].KnoxRouterType=2
 MITESettings[12].Cluster=2
@@ -1226,23 +1226,23 @@ MITESettings[12].DefaultSpeed='768'
 MITESettings[12].CODEC_IP='40.138.73.186'
 
 MITESettings[13].SiteIPAddress= '150.199.24.11'
-MITESettings[13].SiteIndex= 12
+MITESettings[13].SiteIndex= 13
 MITESettings[13].SiteName= 'Eugene Room 1'
 MITESettings[13].KnoxRouterType=1
 MITESettings[13].Cluster=3
 MITESettings[13].DefaultSpeed='768'
 MITESettings[13].CODEC_IP='150.199.24.12'
 
-MITESettings[14].SiteIPAddress= '150.199.99.218'
-MITESettings[14].SiteIndex= 13
+MITESettings[14].SiteIPAddress= '209.131.233.43'
+MITESettings[14].SiteIndex= 14
 MITESettings[14].SiteName= 'Glasgow Room 1'
 MITESettings[14].KnoxRouterType=2
 MITESettings[14].Cluster=1
 MITESettings[14].DefaultSpeed='768'
-MITESettings[14].CODEC_IP='150.199.99.220'
+MITESettings[14].CODEC_IP='209.131.233.8'
 
 MITESettings[15].SiteIPAddress= '14.14.14.14'
-MITESettings[15].SiteIndex= 14
+MITESettings[15].SiteIndex= 15
 MITESettings[15].SiteName= 'Glasgow Room 2'
 MITESettings[15].KnoxRouterType=2
 MITESettings[15].Cluster=1
@@ -1250,7 +1250,7 @@ MITESettings[15].DefaultSpeed='768'
 MITESettings[15].CODEC_IP='150.199.99.217'
 
 MITESettings[16].SiteIPAddress= '198.209.2.21'
-MITESettings[16].SiteIndex= 17
+MITESettings[16].SiteIndex= 16
 MITESettings[16].SiteName= 'New Bloom. Room 1'
 MITESettings[16].KnoxRouterType=1
 MITESettings[16].Cluster=3
@@ -1258,7 +1258,7 @@ MITESettings[16].DefaultSpeed='768'
 MITESettings[16].CODEC_IP='198.209.2.20'
 
 MITESettings[17].SiteIPAddress= '207.160.218.239'
-MITESettings[17].SiteIndex= 19
+MITESettings[17].SiteIndex= 17
 MITESettings[17].SiteName= 'New Franklin Room 1'
 MITESettings[17].KnoxRouterType=2
 MITESettings[17].Cluster=1
@@ -1266,7 +1266,7 @@ MITESettings[17].DefaultSpeed='768'
 MITESettings[17].CODEC_IP='207.160.218.241'
 
 MITESettings[18].SiteIPAddress= '216.74.212.27'
-MITESettings[18].SiteIndex= 23
+MITESettings[18].SiteIndex= 18
 MITESettings[18].SiteName= 'Pilot Grove Room 1'
 MITESettings[18].KnoxRouterType=2
 MITESettings[18].Cluster=1
@@ -1274,31 +1274,31 @@ MITESettings[18].DefaultSpeed='768'
 MITESettings[18].CODEC_IP='216.74.212.26'
 
 MITESettings[19].SiteIPAddress= '14.14.14.14'
-MITESettings[19].SiteIndex= 24
+MITESettings[19].SiteIndex= 19
 MITESettings[19].SiteName= 'Pilot Grove Room 2'
 MITESettings[19].KnoxRouterType=2
 MITESettings[19].Cluster=1
 MITESettings[19].DefaultSpeed='768'
 MITESettings[19].CODEC_IP='216.74.212.29'
 
-MITESettings[20].SiteIPAddress= '198.209.194.120'
-MITESettings[20].SiteIndex= 25
+MITESettings[20].SiteIPAddress= '192.168.202.16'
+MITESettings[20].SiteIndex= 20
 MITESettings[20].SiteName= 'Prairie Home Room 1'
 MITESettings[20].KnoxRouterType=1
 MITESettings[20].Cluster=2
 MITESettings[20].DefaultSpeed='768'
-MITESettings[20].CODEC_IP='198.209.194.116'
+MITESettings[20].CODEC_IP='192.168.202.69'
 
-MITESettings[21].SiteIPAddress= '14.14.14.14'
-MITESettings[21].SiteIndex= 26
+MITESettings[21].SiteIPAddress= '114.14.14.14'
+MITESettings[21].SiteIndex= 21
 MITESettings[21].SiteName= 'Prairie Home Room 2'
 MITESettings[21].KnoxRouterType=1
 MITESettings[21].Cluster=2
 MITESettings[21].DefaultSpeed='768'
-MITESettings[21].CODEC_IP='198.209.194.117'
+MITESettings[21].CODEC_IP='192.168.202.136'
 
 MITESettings[22].SiteIPAddress= '204.185.53.12'
-MITESettings[22].SiteIndex= 27
+MITESettings[22].SiteIndex= 22
 MITESettings[22].SiteName= 'Russellville'
 MITESettings[22].KnoxRouterType=1
 MITESettings[22].Cluster=3
@@ -1306,7 +1306,7 @@ MITESettings[22].DefaultSpeed='768'
 MITESettings[22].CODEC_IP='204.185.53.10'
 
 MITESettings[23].SiteIPAddress= '68.188.37.85'
-MITESettings[23].SiteIndex= 28
+MITESettings[23].SiteIndex= 23
 MITESettings[23].SiteName= 'Sacred Heart'
 MITESettings[23].KnoxRouterType=1
 MITESettings[23].Cluster=2
@@ -1314,7 +1314,7 @@ MITESettings[23].DefaultSpeed='768'
 MITESettings[23].CODEC_IP='68.188.37.84'
 
 MITESettings[24].SiteIPAddress= '14.14.14.14'
-MITESettings[24].SiteIndex= 31
+MITESettings[24].SiteIndex= 24
 MITESettings[24].SiteName= 'Sacred Heart Cart'
 MITESettings[24].KnoxRouterType=2
 MITESettings[24].Cluster=1
@@ -1322,7 +1322,7 @@ MITESettings[24].DefaultSpeed='768'
 MITESettings[24].CODEC_IP='68.188.37.83'
 
 MITESettings[25].SiteIPAddress= '204.185.234.3'
-MITESettings[25].SiteIndex= 29
+MITESettings[25].SiteIndex= 25
 MITESettings[25].SiteName= 'Slater Room 1'
 MITESettings[25].KnoxRouterType=2
 MITESettings[25].Cluster=1
@@ -1330,7 +1330,7 @@ MITESettings[25].DefaultSpeed='768'
 MITESettings[25].CODEC_IP='204.185.234.10'
 
 MITESettings[26].SiteIPAddress= '14.14.14.14'
-MITESettings[26].SiteIndex= 30
+MITESettings[26].SiteIndex= 26
 MITESettings[26].SiteName= 'Slater Room 2'
 MITESettings[26].KnoxRouterType=2
 MITESettings[26].Cluster=1
@@ -1338,20 +1338,20 @@ MITESettings[26].DefaultSpeed='768'
 MITESettings[26].CODEC_IP='204.185.234.9'
 
 MITESettings[27].SiteIPAddress= '184.81.47.221'
-MITESettings[27].SiteIndex= 31
+MITESettings[27].SiteIndex= 27
 MITESettings[27].SiteName= 'St. Elizabeth'
 MITESettings[27].KnoxRouterType=1
 MITESettings[27].Cluster=3
 MITESettings[27].DefaultSpeed='768'
 MITESettings[27].CODEC_IP='184.81.47.218'
 
-MITESettings[27].SiteIPAddress= '209.106.55.203'
-MITESettings[27].SiteIndex= 32
-MITESettings[27].SiteName= 'Tuscumbia Room 1'
-MITESettings[27].KnoxRouterType=2
-MITESettings[27].Cluster=3
-MITESettings[27].DefaultSpeed='768'
-MITESettings[27].CODEC_IP='209.106.55.202'
+MITESettings[28].SiteIPAddress= '209.106.55.203'
+MITESettings[28].SiteIndex= 28
+MITESettings[28].SiteName= 'Tuscumbia Room 1'
+MITESettings[28].KnoxRouterType=2
+MITESettings[28].Cluster=3
+MITESettings[28].DefaultSpeed='768'
+MITESettings[28].CODEC_IP='209.106.55.202'
 
 DEFINE_START
 
@@ -2037,23 +2037,15 @@ BUTTON_EVENT [PresentationInputSelections]
 	    {
 		call'VGA_Switch_PC'
 		wait 10{SEND_STRING dv_Lifesize,"'set video primary-input dvi0',13,10"}	
-		//}
 	    }
-
 	    case 7:  //Laptop
 	    {
 		call'VGA_Switch_Laptop'
 		wait 10{SEND_STRING dv_Lifesize,"'set video primary-input dvi0',13,10"}	
-		//}
-	    }
-	    //need to select local input on the lifesize
-	    
-	    
+	    } 
 	}
     }
 }
-
-
 
 
 DEFINE_EVENT //data (online and string) EVENTS
@@ -2352,37 +2344,7 @@ DATA_EVENT [34001:1:1]//panel
 }//end the data_event
 
 
-/*
-
-case cnLookingForCustomMessage: 
-			{
-			CustomAlertText = datafromtouchpanel
-			send_command vdvTP_Alerts, "'TEXT1-',CustomAlertText"
-			trackingTextInput = 0
-			// datafromtouchpanel =''
-			}
-
-		If (find_string(datafromtouchpanel,'AKB-',1)) //datafrom Keyboard for preset
-		{
-		    remove_string (datafromtouchpanel,'AKB-',1)
-		    switch (trackingKeyboardInput)
-		    {
-			
-			case cnLookingForCustomMessage: 
-			{
-			CustomAlertText = datafromtouchpanel
-			send_command vdvTP_Alerts, "'TEXT1-',CustomAlertText"
-			trackingTextInput = 0
-			
-			datafromtouchpanel =''
-			}			
-			}
-		    }*/
-
-
-
 Define_event //direct dial
-
 //CurrentPhoneIndex //from 0 to length
 Button_Event [Dialsites]
 {
@@ -3390,7 +3352,7 @@ button_event [vdvTP_modeSelect, 1] //Presentation
 	Call 'initlifesize'
 	do_push(vdvTP_PresentationSelections,2)
 	call'turnondisplays_presentation'
-	if (MITESettings[SettingIndex].SiteIndex= 26) {
+    wait 25{
 	    SEND_STRING dv_Lifesize,"'set system telepresence off',13,10" 
 	    Telepresence_ON = 0
 	}
@@ -3398,7 +3360,7 @@ button_event [vdvTP_modeSelect, 1] //Presentation
 	    SEND_STRING dv_Lifesize,"'control remote1 home',13,10" 
 	    SEND_STRING dv_Lifesize,"'control remote1 green',13,10" 
 	}
-	}
+    }
 	}
 }
 button_event [vdvTP_modeSelect, 2] //VTC 
